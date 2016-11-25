@@ -1,0 +1,10 @@
+<p>
+  people works!
+</p>
+
+<button *ngIf="!isAddingNewPerson" (click)="isAddingNewPerson = !isAddingNewPerson" class="btn btn-primary pull-right">Add New Person</button>
+
+<app-newperson *ngIf="isAddingNewPerson" (onSubmitted)="onSubmit($event)" (onCancel)="isAddingNewPerson = false"></app-newperson>
+
+<app-profile [person]=person *ngFor="let person of people"></app-profile>
+

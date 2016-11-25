@@ -1,0 +1,28 @@
+<hr>
+<div class="container">
+  <form #peopleForm="ngForm" (ngSubmit)="onSubmit(peopleForm.value)">
+    <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" class="form-control" ngModel name="name">
+    </div>
+    <div class="form-group">
+        <label>Status</label>
+        <textarea type="text" class="form-control" ngModel name="status"></textarea>
+    </div>
+    <div class="form-group" ngModelGroup="twitter">
+        <label>Twitter</label>
+        <input type="text" class="form-control" ngModel name="url" placeholder="twitter url">
+        <input type="text" class="form-control" ngModel name="name" placeholder="twitter name">
+    </div>
+    <div class="form-group" ngModelGroup="website">
+        <label>Website</label>
+        <input type="text" class="form-control" ngModel name="url" placeholder="website url">
+        <input type="text" class="form-control" ngModel name="name" placeholder="website name">
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+    <button (click)="cancel()" class="btn btn-danger">Cancel</button>
+  </form>
+</div>
+
+
+

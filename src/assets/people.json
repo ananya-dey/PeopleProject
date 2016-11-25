@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Anna Doe",
+    "status": "Currently learning Angular2...",
+    "website": {
+      "url": "https://angular.io/",
+      "name": "Angular.io"
+    },
+    "twitter": {
+      "url": "https://twitter.com/angularjs",
+      "name": "Angular.io.twitter"
+    }
+  },
+  {
+    "name": "Chandler Bing",
+    "status": "Watching Angular2...",
+    "twitter": {
+    "url": "https://twitter.com/chandleringbing?lang=en",
+    "name": "Bing twitter"
+    }
+  }
+]
